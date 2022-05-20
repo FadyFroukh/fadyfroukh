@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+/*Globals*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+/* Start of Main */
+main{
+    min-height: 100vh;
+    background-color: #12171c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+main header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main header p {
+    margin-left: 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
+main header p a {
+    transition: all .4s ease-in;
+}
+main header p a:hover {
+    text-decoration: underline;
+    color: #009efd;
+}
+main .cont{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+main .cont > div{
+    height: 100%;
+    width: 100%;
+    flex: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main .cont .text-div{
+    line-height: 2;
+    margin-top:30px;
+}
+main .cont .text-div h2{
+    font-size: 55px;
+    margin-bottom: 12px;
+}
+main .cont .text-div h2 span{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    transition: all .4s ease-in-out;
+    animation: changeColor 15s linear infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main .cont .text-div p {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+main .cont .text-div p span{
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    font-weight: 800;
+}
+main .cont .text-div div{
+    font-size: 20px;
+}
+main .cont .image-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .cont .image-div .image-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+main .image-cont img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 10px 5px 5px 5px #0b1621;
+    border:3.5px solid #111;
+
+}
+main .image-cont .overlay{
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+main .image-div p{
+    margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.text-fill{
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main .arrow{
+    cursor: pointer;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 50%;
+    animation: hover 1s infinite;
+}
+
+/* End of Main */
+
+@keyframes changeColor {
+    0%{
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+    25%{
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    }
+    50%{
+        background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    }
+    75%{
+        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    }
+    100%{
+        background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    }
+}
+
+@keyframes hover {
+    0%{
+        transform: scale(1.05);
+    }
+    20%{
+        transform: scale(1.1);
+    }
+
+    40%{
+        transform: scale(1.15);
+    }
+
+    60%{
+        transform: scale(1.2);
+    }
+
+    80%{
+        transform: scale(1.25);
+    }
+
+    100%{
+        transform: scale(1.30);
+    }
+}
+
+@media (max-width:720px) and (min-width:320px) {
+    .cont{
+        flex-direction: column;
+    }
+    .cont .text-div {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
 }
