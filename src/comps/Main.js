@@ -27,6 +27,7 @@ function Main(){
                 <div className="image-div">
                     <div className={`image-cont`} onClick={changePic}>
                         <img src={`pics/${count}.jpg`} alt="Me"/>
+                        <div className="overlay">Press to Change</div>
                     </div>
                     <p>Pictures of Me , How Handsome!</p>
                 </div>

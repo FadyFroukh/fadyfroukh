@@ -31,7 +31,7 @@ main header{
     justify-content: center;
 }
 main header p {
-    margin-left: 9px;
+    margin-right: 9px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -94,6 +94,7 @@ main .cont .image-div .image-cont{
     width: 80%;
     height: 80%;
     cursor: pointer;
+    position: relative;
 }
 main .image-cont img{
     width: 100%;
@@ -101,14 +102,13 @@ main .image-cont img{
     border-radius: 25px;
     box-shadow: 10px 5px 5px 5px #0b1621;
     border:3.5px solid #111;
-
 }
 main .image-cont .overlay{
-    width: 100%;
-    max-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #009efd;
 }
 
 
@@ -183,5 +183,8 @@ main .arrow{
     .cont .text-div {
         margin-top: 0;
         margin-bottom: 20px;
+    }
+    .cont .image-div .image-cont{
+        width: 100%;
     }
 }
