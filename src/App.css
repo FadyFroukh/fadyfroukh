@@ -144,6 +144,11 @@ main .arrow{
     animation: hover 1s infinite;
 }
 
+.H2{
+    font-size: 55px;
+    margin-bottom: 12px;
+}
+
 /* End of Main */
 
 @keyframes changeColor {
@@ -200,6 +205,9 @@ main .arrow{
     .cont .image-div .image-cont{
         width: 100%;
     }
+    .H2{
+        font-size: 40px;
+    }
 }
 
 .container{
@@ -207,8 +215,4 @@ main .arrow{
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
-}
-.H2{
-    font-size: 55px;
-    margin-bottom: 12px;
 }
