@@ -1,4 +1,6 @@
 import {useState } from "react";
+import Emoji from "./Emoji";
+import H2 from "./H2";
 import Header from "./Header";
 
 function Main(){
@@ -18,10 +20,10 @@ function Main(){
             <Header/>
            <div className="cont">
                 <div className="text-div">
-                    <h2>Hello <span className="text-fill">World!</span></h2>
-                    <p>My Name is <span className="text-fill">Fady</span> And I Love to do Stuff!</p>
+                    <H2>Hello <span className="text-fill">World!</span><Emoji label="heart" symbol="💖"/></H2>
+                    <p>My Name is <span className="text-fill">Fady</span> And I Love to do Stuff!<Emoji label="firework" symbol="🧨"/></p>
                     <div>
-                        I Design The Web , Program The Web , And I Really Love to Drink Nescafe!
+                        I Design The Web , Program The Web , And I Really Love to Drink Nescafe!<Emoji label="nescafe" symbol="☕"/>
                     </div>
                 </div>
                 <div className="image-div">
