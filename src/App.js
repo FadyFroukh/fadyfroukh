@@ -12,13 +12,13 @@ function App() {
         <Main/>
         <EmojiCut label="happy" symbol="😃"/>
         <Services/>
-        {/* <EmojiCut label="idk" symbol="💁‍♂️"/>
-        <Skills/>
-        <EmojiCut label="dance" symbol="🕺"/>
+        <EmojiCut label="idk" symbol="💁‍♂️"/>
+        {/* <Skills/>
+        <EmojiCut label="dance" symbol="🕺"/> */}
         <Work/>
         <EmojiCut label="electrcity" symbol="⚡"/>
-        <Contact/>
-        <Footer/> */}
+        {/* <Contact/> */}
+        <Footer/>
     </div>
   );
 }

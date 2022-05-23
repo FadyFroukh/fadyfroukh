@@ -17,7 +17,7 @@ function Contact(){
                                 />
                         </section>
                         <section>
-                                <label for="lastName">Last Name</label>
+                                <label htmlFor="lastName">Last Name</label>
                                 <input
                                     type="text"
                                     name="lastName"

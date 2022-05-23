@@ -16,7 +16,7 @@ function Main(){
     }
  
     return(
-        <main>
+        <main id="main">
             <Header/>
            <div className="cont">
                 <div className="text-div">

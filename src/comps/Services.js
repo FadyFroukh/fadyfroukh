@@ -14,7 +14,7 @@ function Services(){
                 <BoxesContainer>
                     <BoxesRow>
                         <Box>
-                            <Emoji label="frontend" symbol="👨‍💻" fontSize="30px"/>
+                            <Emoji label="frontend" symbol="👨‍💻" fontSize="40px"/>
                             <H3>Front End</H3>
                             <p className="grey-color text-center">If you wish to have an awesome static website!</p>
                             <Button>
@@ -24,7 +24,7 @@ function Services(){
                             </Button>
                         </Box>
                         <Box>
-                            <Emoji label="backend" symbol="⌨" fontSize="30px"/>
+                            <Emoji label="backend" symbol="⌨" fontSize="40px"/>
                             <H3>Back End</H3>
                             <p className="grey-color text-center">If you wish to have an awesome website with logic!</p>
                             <Button>
@@ -34,7 +34,7 @@ function Services(){
                             </Button>
                         </Box>
                         <Box>
-                            <Emoji label="database" symbol="🏪" fontSize="30px"/>
+                            <Emoji label="database" symbol="🏪" fontSize="40px"/>
                             <H3>Databases</H3>
                             <p className="grey-color text-center">If you wish to have an awesome website with backend and a database!</p>
                             <Button>
@@ -46,7 +46,7 @@ function Services(){
                     </BoxesRow>
                     <BoxesRow>
                         <Box>
-                            <Emoji label="java" symbol="☕" fontSize="30px"/>
+                            <Emoji label="java" symbol="☕" fontSize="40px"/>
                             <H3>Java</H3>
                             <p className="grey-color text-center">If you wish to have an awesome Java GUI Project!</p>
                             <Button>
@@ -56,7 +56,7 @@ function Services(){
                             </Button>
                         </Box>
                         <Box>
-                            <Emoji label="microsoft" symbol="📑" fontSize="30px"/>
+                            <Emoji label="microsoft" symbol="📑" fontSize="40px"/>
                             <H3>Microsoft Office</H3>
                             <p className="grey-color text-center">If you wish to have your microsoft office projects done!</p>
                             <Button>
@@ -66,7 +66,7 @@ function Services(){
                             </Button>
                         </Box>
                         <Box>
-                            <Emoji label="reports" symbol="📝" fontSize="30px"/>
+                            <Emoji label="reports" symbol="📝" fontSize="40px"/>
                             <H3>Software Reports</H3>
                             <p className="grey-color text-center">If you wish to have an awesome Report for Your Software Project!</p>
                             <Button>

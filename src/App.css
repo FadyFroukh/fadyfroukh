@@ -150,12 +150,64 @@ main .arrow{
     background-color: #636e72;
 }
 
+/* Work */
+
+#work .arrow{
+    cursor: pointer;
+}
+#work .image-gallery{
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+#work .image-gallery .images{
+    width: 100%;
+    height: 100%;
+}
+#work .image-gallery .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#work .image-gallery .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 11, 11, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+#work .image-gallery .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 /* Footer */
 footer{
     background-color: #000;
     padding: 10px;
+    color: #fff;
 }
-
+.footer-box{
+    line-height: 2.75;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-box > div{
+    display: flex;
+}
+.footer-box > div p {
+    margin-right: 7px;
+}
+.footer-box > div svg{
+    margin-top: 7px;
+    cursor: pointer;
+}
 /* Framework */
 
 .text-fill{
@@ -254,6 +306,9 @@ form .form-part section input{
 }
 form .msg-input{
     width: 400px !important;
+}
+.clear-list{
+    list-style: none;
 }
 
 /* Animaciones */
