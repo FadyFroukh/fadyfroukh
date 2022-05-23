@@ -7,7 +7,7 @@ function Work(){
     const [images] = useState(["project1.png","project2.png","project3.png"]);
     const [current,setCurrent] = useState(0);
     const [projects] = useState(["CleanPalCo Website","Smart Table Menu","Organs Donation System"]);
-    const [links] = useState(["https://cleanpalco.vercel.app","https://vercel.graduation.app/",""]);
+    const [links] = useState(["https://cleanpalco.vercel.app","https://graduation-eight.vercel.app/",""]);
 
     const handleLeftArrow = ()=>{
         if(current <= images.length - 1){

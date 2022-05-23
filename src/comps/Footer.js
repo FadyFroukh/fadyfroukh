@@ -4,7 +4,6 @@ import BoxesRow from "./BoxesRow";
 import Emoji from "./Emoji";
 import H2 from "./H2";
 import H3 from "./H3";
-import Share from "./Share";
 
 function Footer(){
     return(
@@ -36,14 +35,8 @@ function Footer(){
                     <Box>
                         <div className="footer-box">
                             <p>Created With <Emoji label="heart" symbol="❤"/> By <b>Fady Froukh</b></p>
-                            <div>
-                                <p>This Website Was Created Using the <b><a href="#">Reactjs</a></b> Framework</p>
-                                <a href="https://www.reactjs.org" target="_blank"><Share/></a>
-                            </div>
-                            <div>
-                                <p>Website Code on <b><a href="#">Github</a></b></p>
-                                <a href="https://github.com/FadyFroukh/fadyfroukh" target="_blank"><Share/></a>
-                            </div>
+                            <p>This Website Was Created Using the <b><a href="#">Reactjs</a></b> Framework</p>
+                            <p>Website Code on <b><a href="#">Github</a></b></p>
                         </div>
                     </Box>
 
