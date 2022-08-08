@@ -35,8 +35,8 @@ function Footer(){
                     <Box>
                         <div className="footer-box">
                             <p>Created With <Emoji label="heart" symbol="❤"/> By <b>Fady Froukh</b></p>
-                            <p>This Website Was Created Using the <b><a href="https://reactjs.org">Reactjs</a></b> Framework</p>
-                            <p>Website Code on <b><a href="https://github.com/FadyFroukh/fadyfroukh">Github</a></b></p>
+                            <p>This Website Was Created Using the <b><a href="https://reactjs.org" target="_blank">Reactjs</a></b> Framework</p>
+                            <p>Website Code on <b><a href="https://github.com/FadyFroukh/fadyfroukh" target="_blank">Github</a></b></p>
                         </div>
                     </Box>
 

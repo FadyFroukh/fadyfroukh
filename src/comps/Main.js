@@ -8,7 +8,7 @@ function Main(){
     const [count,setCount] =  useState(1);
 
     const changePic = ()=>{
-        const num = 3;
+        const num = 5;
         if (count >= num)
         setCount(1);
         else

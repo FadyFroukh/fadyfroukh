@@ -13,11 +13,12 @@ function App() {
         <EmojiCut label="happy" symbol="😃"/>
         <Services/>
         <EmojiCut label="idk" symbol="💁‍♂️"/>
-        {/* <Skills/>
-        <EmojiCut label="dance" symbol="🕺"/> */}
+        <Skills/>
+        <EmojiCut label="dance" symbol="🕺"/>
         <Work/>
         <EmojiCut label="electrcity" symbol="⚡"/>
-        {/* <Contact/> */}
+        <Contact/>
+        <EmojiCut label="bycicle" symbol="🚴‍♀️"/>
         <Footer/>
     </div>
   );

@@ -1,57 +1,43 @@
 import Container from "./Container";
-import H3 from "./H3";
-
+import H3 from "./H3"
+import LanguageImage from "./LanguageImage";
 function Contact(){
     return(
         <div id="contact">
             <Container>
-                <H3>Contact Me</H3>.
-                <div className="form">
-                    <form className="contact-form">
-                        <div className="form-part">
-                        <section>
-                                <label htmlFor="firstName">First Name</label>
-                                <input
-                                    type="text"
-                                    name="firstName"
-                                />
-                        </section>
-                        <section>
-                                <label htmlFor="lastName">Last Name</label>
-                                <input
-                                    type="text"
-                                    name="lastName"
-                                />
-                        </section>
+               <H3>Lets Have a Chat</H3>
+               <p className="text-center grey-color">Contact Me to Get the Ball Rolling!</p>
+               <div className="boxes-container">
+                    <div className="box-row">
+                        <div className="box">
+                            <LanguageImage src="pics/email.png"/>
+                            <p>E-Mail</p>
+                            <p>
+                                <a className="grey-color" href="mailto:fadyfroukh@gmail.com">
+                                    fadyfroukh@gmail.com
+                                </a>
+                            </p>
                         </div>
-                        <div className="form-part">
-                        <section>
-                                <label htmlFor="email">Email Address</label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                />
-                        </section>
-                        <section>
-                                <label htmlFor="phone">Phone Number</label>
-                                <input
-                                    type="text"
-                                    name="phone"
-                                />
-                        </section>
+                        <div className="box">
+                            <LanguageImage src="pics/facebook.png"/>
+                            <p>Facebook</p>
+                            <p>
+                                <a href="https://www.facebook.com/fadyfroukh" target="_blank" className="grey-color">
+                                    Fady Froukh
+                                </a>
+                            </p>
                         </div>
-                        <div className="form-part">
-                            <section>
-                                    <label htmlFor="topic">Message Topic</label>
-                                    <input
-                                        type="text"
-                                        name="topic"
-                                        className="msg-input"
-                                    />
-                            </section>
+                        <div className="box">
+                        <LanguageImage src="pics/linkedin.png"/>
+                            <p>LinkedIn</p>
+                            <p>
+                                <a href="https://www.linkedin.com/in/fadi-froukh-987b8921a/" target="_blank" className="grey-color">
+                                    Fadi Froukh
+                                </a>
+                            </p>
                         </div>
-                    </form>
-                </div>
+                    </div>
+               </div>
             </Container>
         </div>
     );
