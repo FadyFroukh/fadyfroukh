@@ -20,19 +20,23 @@ function Main(){
     }
 
     const [percentage,setPercentage] = useState(0);
+    const [loaded] = useState(sessionStorage.getItem("loaded"));
 
     useEffect(()=>{
-        document.body.style.overflow = 'hidden';
-        const interval = setInterval(()=>{
-            setPercentage(percentage=>percentage+1);
-        },60)
-        if (percentage >= 100){
-            document.body.style.overflow = '';
+        if (!loaded){
+            document.body.style.overflow = 'hidden';
+            const interval = setInterval(()=>{
+                setPercentage(percentage=>percentage+1);
+            },60)
+            if (percentage >= 100){
+                document.body.style.overflow = '';
+                sessionStorage.setItem("loaded",true);
+            }
+            if (percentage >= 130){
+                clearInterval(interval);
+            }
+            return () => clearInterval(interval);
         }
-        if (percentage >= 130){
-            clearInterval(interval);
-        }
-        return () => clearInterval(interval);
     },[percentage]);
  
     return(
@@ -56,7 +60,7 @@ function Main(){
            </div>
             <HiddenMenu left={left} setLeft={setLeft}/> 
             {
-                percentage >= 120 ? null : <LoadingMenu percentage={percentage}/>
+                loaded ? null : <LoadingMenu percentage={percentage}/>
             }
         </main>
     );
