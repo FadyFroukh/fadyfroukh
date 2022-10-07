@@ -4,10 +4,10 @@ import H3 from "./H3";
 
 function Work(){
 
-    const [images] = useState(["project1.png","project2.png","project3.png"]);
+    const [images] = useState(["project1.png","project2.png","project3.png","project4.png"]);
     const [current,setCurrent] = useState(0);
-    const [projects] = useState(["CleanPalCo Website","Smart Table Menu","Organs Donation System"]);
-    const [links] = useState(["https://cleanpalco.vercel.app","https://graduation-eight.vercel.app/",""]);
+    const [projects] = useState(["CleanPalCo Website","Smart Table Menu","Organs Donation System","Legacy Express Trucking Training System"]);
+    const [links] = useState(["https://cleanpalco.vercel.app","https://graduation-eight.vercel.app/","","https://express-legacy-training.vercel.app/"]);
 
     const handleLeftArrow = ()=>{
         if(current <= images.length - 1){
