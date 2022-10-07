@@ -69,6 +69,19 @@ function Skills(){
                             <Bar precentage="85" color="#e67e22"/>
                         </div>
                         <div className="box">
+                            <LanguageImage src='pics/ts.png'/>
+                                <H3>TypeScript</H3>
+                            <Bar precentage="80" color="#330867"/>
+                        </div>
+                        <div className="box">
+                            <LanguageImage src='pics/redux.png'/>
+                                <H3>Redux</H3>
+                            <Bar precentage="85" color="#0b1621"/>
+                        </div>
+
+                    </div>
+                    <div className="box-row">
+                    <div className="box">
                             <LanguageImage src='pics/office.png'/>
                                 <H3>Microsoft Office</H3>
                             <Bar precentage="90" color="#d35400"/>
@@ -78,6 +91,7 @@ function Skills(){
                                 <H3>Software Reports</H3>
                             <Bar precentage="90" color="#000"/>
                         </div>
+
                     </div>
                     <div className="box-row">
                         <div className="box">

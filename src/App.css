@@ -164,6 +164,7 @@ main .hidden-menu .items p {
 
 main .hidden-menu footer{
     height: 10vh;
+    background-color: inherit;
 }
 
 
@@ -241,7 +242,7 @@ main .hidden-menu footer{
     flex-direction: column;
 }
 /* Footer */
-body > footer{
+.App footer{
     background-color: #000;
     padding: 10px;
     color: #fff;
