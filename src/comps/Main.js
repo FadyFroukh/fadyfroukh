@@ -60,7 +60,7 @@ function Main(){
            </div>
             <HiddenMenu left={left} setLeft={setLeft}/> 
             {
-                loaded ? null : <LoadingMenu percentage={percentage}/>
+                loaded ? null : percentage >= 130 ? null : <LoadingMenu percentage={percentage}/>
             }
         </main>
     );
