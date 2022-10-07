@@ -46,7 +46,7 @@ function Work(){
                     </div>
                     <div className="content">
                         <p><b>{projects[current]}</b></p>
-                        <Button><a href={links[current]} target="_blank">Visit Site</a></Button>
+                        <Button><a href={links[current]} target="_blank"  rel="noreferrer">Visit Site</a></Button>
                     </div>
                     <div className="right-arrow arrow" onClick={handleRightArrow}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">

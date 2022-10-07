@@ -5,7 +5,7 @@ export function HiddenMenu({left,setLeft}){
 
     const closeMenu = ()=> {
         document.body.style.overflow = '';
-        setLeft("100%");
+        setLeft("-100%");
     };
 
     return (

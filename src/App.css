@@ -31,6 +31,56 @@ a{
     font-weight: bold;
 }
 /* Start of Main */
+
+.loading{
+    width: 100%;
+    height: 100vh;
+    background-color: #0b1621;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    line-height: 2;
+    font-size: 1.8rem;
+    z-index: 999;
+}
+
+.loading .loading-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    animation: wink 3s infinite ease-in;
+}
+
+.hide-loading{
+    transition: all 1s ease-in;
+    opacity: 0;
+}
+
+.hide-loading-box{
+    display: none !important;
+}
+
+@keyframes wink {
+    0%{
+        opacity: 0.3;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: .3;
+    }
+}
+
 main{
     min-height: 100vh;
     background-color: #12171c;

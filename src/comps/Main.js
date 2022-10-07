@@ -1,13 +1,15 @@
-import {useState } from "react";
+import {useState,useEffect} from "react";
 import Emoji from "./Emoji";
 import H2 from "./H2";
 import Header from "./Header";
 import { HiddenMenu } from "./HiddenMenu";
+import LoadingMenu  from './LoadingMenu';
+
 
 function Main(){
 
     const [count,setCount] =  useState(1);
-    const [left,setLeft] = useState("100%");
+    const [left,setLeft] = useState("-100%");
 
     const changePic = ()=>{
         const num = 5;
@@ -16,6 +18,22 @@ function Main(){
         else
         setCount(count=>count+1);
     }
+
+    const [percentage,setPercentage] = useState(0);
+
+    useEffect(()=>{
+        document.body.style.overflow = 'hidden';
+        const interval = setInterval(()=>{
+            setPercentage(percentage=>percentage+1);
+        },60)
+        if (percentage >= 100){
+            document.body.style.overflow = '';
+        }
+        if (percentage >= 130){
+            clearInterval(interval);
+        }
+        return () => clearInterval(interval);
+    },[percentage]);
  
     return(
         <main id="main">
@@ -36,8 +54,9 @@ function Main(){
                     <p>Pictures of Me , How Handsome!</p>
                 </div>
            </div>
+            <HiddenMenu left={left} setLeft={setLeft}/> 
             {
-                 <HiddenMenu left={left} setLeft={setLeft}/> 
+                percentage >= 120 ? null : <LoadingMenu percentage={percentage}/>
             }
         </main>
     );
